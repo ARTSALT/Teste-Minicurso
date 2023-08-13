@@ -89,7 +89,7 @@ public class Gerente
 	//Abaixo estam os métodos get e set
 	
 	
-	public void setNome(String nome)
+	private void setNome(String nome)
 	{
 		if (nome != null && nome != "")
 		{
@@ -104,7 +104,7 @@ public class Gerente
 	public String getNome()
 		{return this.nome;}
 	
-	public void setCpf(String cpf)
+	private void setCpf(String cpf)
 	{
 		if (cpf.length() == 14 || cpf.length() == 11)
 		{
@@ -119,7 +119,7 @@ public class Gerente
 	public String getCpf()
 		{return this.cpf;}
 	
-	public void setDatadeN(String nasc)
+	private void setDatadeN(String nasc)
 	{
 		if (nasc.charAt(3) == '.' || nasc.charAt(3) == '/' || nasc.charAt(3)== '-' || nasc.charAt(2) == '.' || nasc.charAt(2) == '/' || nasc.charAt(2)== '-')
 		{
@@ -140,7 +140,7 @@ public class Gerente
 	public LocalDate getDatadeN()
 		{return this.datadeN;}
 	
-	public void setSenha(String senha)
+	private void setSenha(String senha)
 	{
 		if (senha != null && senha != "" && senha.length() > 3)
 		{
